@@ -1,23 +1,7 @@
 # Automated Airflow pipeline for Cricket Latest Standings
 
 ℹ️ **Description:**
-- Data Retrieval with Python and Cricbuzz API 🐍
-  - Utilize Python to interface with the Cricbuzz API for fetching cricket statistics efficiently.
-
-- Storing Data in Google Cloud Storage (GCS) ☁️
-  - Safely preserve obtained data in CSV format within Google Cloud Storage (GCS) for accessibility and scalability.
-
-- Creating a Cloud Function Trigger ⚡
-  - Set up a Cloud Function triggered upon file upload to the GCS bucket, initiating subsequent data processing steps.
-
-- Execution of the Cloud Function 🛠️
-  - Craft intricate code within the Cloud Function to precisely trigger a Dataflow job for smooth data processing.
-
-- Dataflow Job for BigQuery 🔄
-  - Orchestrate the transfer of data from CSV file in GCS to BigQuery using Dataflow, configuring job settings for optimal performance.
-
-- Looker Dashboard Creation 📊
-  - Configure Looker to connect with BigQuery and create visually compelling dashboards for insightful analysis.
+This project is all about using different Google Cloud Consolse capabilities to create an automated flow. We utlise Python to get cricket stats from Cricbuzz. Once we have the stats, we'll save them securely in Google Cloud Storage. Then, we'll set up a system where whenever we add new stats, it automatically triggers a process to move them to BigQuery for analysis. This helps us keep things organized and makes it easy to study the cricket data we're interested in.
 
 🚀 Get Started:
 - Clone this repository.
@@ -47,7 +31,7 @@
   - Run the script "extract_and_push_gcs.py" to test.
   - The fetched CSV file should reflect in your cloud bucket.
 
- - BigQuery configuration:
+- BigQuery configuration:
   - Navigate to BigQuery section in Cloud Console.
   - Create a new dataset, under which create an empty table.
 
