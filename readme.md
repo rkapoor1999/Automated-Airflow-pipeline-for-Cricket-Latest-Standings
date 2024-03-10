@@ -3,6 +3,9 @@
 ℹ️ **Description:**
 This project is all about using different Google Cloud Consolse capabilities to create an automated flow. We utlise Python to get cricket stats from Cricbuzz. Once we have the stats, we'll save them securely in Google Cloud Storage. Then, we'll set up a system where whenever we add new stats, it automatically triggers a process to move them to BigQuery for analysis. This helps us keep things organized and makes it easy to study the cricket data we're interested in.
 
+**Data Pipeline:**
+![Alt Text](https://raw.githubusercontent.com/rkapoor1999/Automated-Airflow-pipeline-for-Cricket-Latest-Standings/main/architecture.png)
+
 🚀 Get Started:
 - Clone this repository.
 - Follow the step-by-step instructions in each section of the README to set up and run the automated Airflow pipeline for cricket latest standings.
